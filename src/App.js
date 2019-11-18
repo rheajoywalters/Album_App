@@ -96,6 +96,7 @@ export function App(props) {
           {albums.map(a => {
             return (
               <ListItem
+                key={a.id}
                 button
                 to={"/app/album/" + a.id + "/"}
                 component={Link}

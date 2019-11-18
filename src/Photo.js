@@ -32,7 +32,7 @@ export default function Photo(props) {
       }}
     >
       {photos.map(p => {
-        return <PhotoCard photo={p} />;
+        return <PhotoCard photo={p} key={p.id} />;
       })}
       <div>
         <Button
